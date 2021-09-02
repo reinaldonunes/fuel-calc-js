@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fuel Calc - Calculadora de custo por deslocamento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+</head>
+<body>
+    <main>
+        <section id="fuelMain">
+            <figure id="fuelLogo"><img src="assets/img/fuelLogo.png" alt="Fuel Calc" title="Fuel Calc"/></figure>
+            
+            <span class="fuelLegend">Após preencher o primeiro campo, pressione TAB para prosseguir.</span>
+
+            <div id="fuelBox">
+                <label for="distance">
+                    <span>DISTÂNCIA TOTAL (KM)</span>
+                    <input type="number" step="0.00" id="distance" class="inputs-values" onBlur="getDistance()" />
+                </label>
+                <label for="media">
+                    <span>MÉDIA VEÍCULO (KM / LITRO)</span>
+                    <input type="number" step="0.00" id="media" class="inputs-values" onBlur="getMedia()" readonly />
+                </label>
+                <label for="price">
+                    <span>VALOR COMBUSTÍVEL (R$ / LITRO)</span>
+                    <input type="number" step="0.00" id="price" class="inputs-values" onBlur="getPrice()" readonly />
+                </label>
+                <label for="cost">
+                    <span>CUSTO POR LITRO</span>
+                    <input type="text" id="cost" class="inputs-values" readonly />
+                </label>
+
+                <div id="resultCalcArea">
+                    <h6>CUSTO DO DESLOCAMENTO</h6>
+                    <span class="previewResultCalc"></span>
+                </div>
+            </div>
+            <span class="authorDev">Desenvolvido por  &nbsp;<a href="https://reinaldonunes.github.io/dev/" target="_blank">Reinaldo J. Nunes</a></span>
+        </section>
+    </main>
+    <script src='assets/js/main.js'></script>
+</body>
+</html>

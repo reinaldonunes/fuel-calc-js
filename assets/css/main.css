@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    box-sizing: border-box;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    text-decoration: none;
+}
+html,body{height:100%;display: inline-table;width: 100%;background:#f5f5f5;}
+
+main{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    padding:40px;
+}
+
+#fuelMain{
+    width:100%;
+    max-width:600px;
+}
+#fuelLogo{display:flex;justify-content: center;align-items:center;margin-bottom:30px;}
+    #fuelLogo img{width:250px;}
+    .fuelLegend{
+        font-size:14px;
+        color:#666;
+        display:flex;
+        justify-content: center;
+        margin-bottom:25px;
+        text-align:center;
+    }
+    #fuelBox{
+        border-radius:10px;
+        padding:30px;
+        box-shadow:0px 0px 10px #ddd;
+        background:#fff;
+    }
+    #fuelBox label{
+        margin-bottom:10px;
+        display:flex;
+        width:100%;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    #fuelBox label span{
+        max-width:50%;
+        font-size:14px;
+        font-weight:bold;
+        display:flex;
+        align-items:center;
+    }
+    #fuelBox label input.inputs-values{
+        border-radius:6px;
+        border:1px solid #ddd;
+        padding:15px;
+        font-size:14px;
+        display:flex;
+        outline:none;
+        text-align:center;
+    }
+    #fuelBox label input.inputs-values:focus{
+        border:1px solid #999;
+    }
+    #fuelBox label input:read-only{background:#ddd;cursor:auto;}
+    #fuelBox label input:focus:read-only{background:#ddd;border-color:#ddd;}
+
+    #resultCalcArea{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    #resultCalcArea h6{
+        margin-top:20px;
+        font-size:18px;
+        font-weight:bold;
+        justify-content: center;
+        padding:10px 10px;
+        color:rgb(82, 0, 0);
+    }
+        .previewResultCalc{
+            font-size:18px;
+            font-weight:bold;
+            padding:10px 15px;
+            border:1px solid #ddd;
+            border-radius:6px;
+        }
+
+        .authorDev{
+            display:flex;
+            justify-content: center;;
+            padding:15px 0px;
+        }
+        .authorDev,
+        .authorDev a{
+            font-size:12px;
+            color:#999;
+        }
+        .authorDev a:hover{
+            text-decoration:underline;
+        }
+
+        @media screen and (max-width:560px){
+            #fuelBox label{
+                flex-direction:column;
+                margin-bottom:20px;
+            }
+            #fuelBox label span,
+            #fuelBox label input{
+                width:100%;
+                max-width:100%;
+            }
+            #fuelBox label span{margin-bottom:10px;}
+        }
+
+        
