@@ -12,13 +12,13 @@
 
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
 </head>
-<body>
+<body onload="setEmptyResult()">
     <main>
         <div id="containerFuel">
             <section class="heroFuel">
                 <h1><span>FuelCalc</span> Free App</h1>
                 <span>Calcule quanto custará a sua viagem ou deslocamento.</span>
-                <a href="" target="_blank" class="button">VER PROJETO NO GITHUB</a>
+                <a href="https://github.com/reinaldonunes/fuel-calc-js" target="_blank" class="button">VER PROJETO NO GITHUB</a>
             </section>
 
             <section class="boxFuel">
@@ -35,81 +35,16 @@
                         <span>Preço combustível (R$/L)</span>
                         <input type="number" step="0" id="price" class="inputs-values" />
                     </label>
-                    <button class="button btnSubmit" id="submitCalc">GERAR RESULTADOS</button>
+                    <button onclick="goResult()" class="button btnSubmit" id="submitCalc">GERAR RESULTADOS</button>
                 </aside>
-                <aside class="boxResult">
-                    
-                    <span class="noResult">Preencha todos os campos ser efetuado o cálculo.</span>
-                    <span class="loading"></span>
-                    
-                    <div class="contentResult">
-                        <h6>Seu veículo gasta (R$ por Km)</h6>
-                        <span class="rskm">R$ 0,629</span>
-
-                        <h5>TOTAL DESLOCAMENTO</h5>
-                        <span class="rsdesloc">R$ 45,28</span>
-                        <span class="rslit">ou 7,1987 litros</span>
-
-                        <span class="baseCalc">Base de cálculo: (Preço / Média) * KM Total</span>
-                    </div>
-                </aside>
+                <aside class="boxResult"></aside>
             </section>
 
         </div>
         <footer>
             <span>2021 FuelCalc Free App - Feito por Reinaldo J. Nunes</span>
         </footer>
-
-
-
-
-
-
-
-
-        <!--
-        <section id="fuelMain">
-
-
-
-
-
-
-
-            <figure id="fuelLogo"><img src="assets/img/fuelLogo.png" alt="Fuel Calc" title="Fuel Calc"/></figure>
-            
-            <span class="fuelLegend">Após preencher o primeiro campo, pressione TAB para prosseguir.</span>
-
-            <div id="fuelBox">
-                <label for="distance">
-                    <span>DISTÂNCIA TOTAL (KM)</span>
-                    <input type="number" step="0.00" id="distance" class="inputs-values" onBlur="getDistance()" />
-                </label>
-                <label for="media">
-                    <span>MÉDIA VEÍCULO (KM / LITRO)</span>
-                    <input type="number" step="0.00" id="media" class="inputs-values" onBlur="getMedia()" readonly />
-                </label>
-                <label for="price">
-                    <span>VALOR COMBUSTÍVEL (R$ / LITRO)</span>
-                    <input type="number" step="0.00" id="price" class="inputs-values" onBlur="getPrice()" readonly />
-                </label>
-                <label for="cost">
-                    <span>CUSTO POR LITRO</span>
-                    <input type="text" id="cost" class="inputs-values" readonly />
-                </label>
-
-                <div id="resultCalcArea">
-                    <h6>CUSTO DO DESLOCAMENTO</h6>
-                    <span class="previewResultCalc"></span>
-                </div>
-            </div>
-            <span class="authorDev">Desenvolvido por  &nbsp;<a href="https://reinaldonunes.github.io/dev/" target="_blank">Reinaldo J. Nunes</a></span>
-        </section>
-
-        -->
     </main>
-    <!-- 
-    <script src='assets/js/main.js'></script>
-    -->
+    <script src='assets/js/main2.js'></script>
 </body>
 </html>
