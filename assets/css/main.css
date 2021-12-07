@@ -36,6 +36,7 @@ main{
     font-weight:700;
     color:#B5B5B5;
     line-height:100%;
+    text-align:center;
 }
 .heroFuel h1 > span{color:#25D88D;}
 
@@ -46,6 +47,7 @@ main{
     font-size:20px;
     font-weight:200;
     color:#ABABAB;
+    text-align:center;
 }
 
 .button{
@@ -206,6 +208,7 @@ main{
     display: flex;
     color:#777;
     justify-content: center;
+    text-align:center;
 }
 
 footer{
@@ -218,105 +221,24 @@ footer{
     display: flex;
     color:#777;
     justify-content: center;
+    text-align:center;
 }
 
 
+/* RESPONSIVO */
+@media screen and (max-width:750px){
+    .heroFuel h1{font-size:50px;}
+    .heroFuel > span{font-size:16px;}
+    .button{font-size:14px;}
 
+    .boxInputs, .boxFuel, .boxResult{width:100%;}
 
+    .boxResult{margin-top:35px;}
+}
 
-
-#fuelLogo{display:flex;justify-content: center;align-items:center;margin-bottom:30px;}
-    #fuelLogo img{width:250px;}
-    .fuelLegend{
-        font-size:14px;
-        color:#666;
-        display:flex;
-        justify-content: center;
-        margin-bottom:25px;
-        text-align:center;
-    }
-    #fuelBox{
-        border-radius:10px;
-        padding:30px;
-        box-shadow:0px 0px 10px #ddd;
-        background:#fff;
-    }
-    #fuelBox label{
-        margin-bottom:10px;
-        display:flex;
-        width:100%;
-        flex-wrap:wrap;
-        justify-content: space-between;
-    }
-    #fuelBox label span{
-        max-width:50%;
-        font-size:14px;
-        font-weight:bold;
-        display:flex;
-        align-items:center;
-    }
-    #fuelBox label input.inputs-values{
-        border-radius:6px;
-        border:1px solid #ddd;
-        padding:15px;
-        font-size:14px;
-        display:flex;
-        outline:none;
-        text-align:center;
-    }
-    #fuelBox label input.inputs-values:focus{
-        border:1px solid #999;
-    }
-    #fuelBox label input:read-only{background:#ddd;cursor:auto;}
-    #fuelBox label input:focus:read-only{background:#ddd;border-color:#ddd;}
-
-    #resultCalcArea{
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-    #resultCalcArea h6{
-        margin-top:20px;
-        font-size:18px;
-        font-weight:bold;
-        justify-content: center;
-        padding:10px 10px;
-        color:rgb(82, 0, 0);
-    }
-        .previewResultCalc{
-            font-size:18px;
-            font-weight:bold;
-            padding:10px 15px;
-            border:1px solid #ddd;
-            border-radius:6px;
-        }
-
-        .authorDev{
-            display:flex;
-            justify-content: center;;
-            padding:15px 0px;
-        }
-        .authorDev,
-        .authorDev a{
-            font-size:12px;
-            color:#999;
-        }
-        .authorDev a:hover{
-            text-decoration:underline;
-        }
-
-        @media screen and (max-width:560px){
-            #fuelBox label{
-                flex-direction:column;
-                margin-bottom:20px;
-            }
-            #fuelBox label span,
-            #fuelBox label input{
-                width:100%;
-                max-width:100%;
-            }
-            #fuelBox label span{margin-bottom:10px;}
-        }
-
-        
+@media screen and (max-width:430px){
+    .heroFuel h1{font-size:35px;}
+    .boxFuel{padding:25px;}
+    .contentResult h6{font-size:15px;}
+    .contentResult h5{font-size:17px;}
+}
