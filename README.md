@@ -2,7 +2,7 @@ Fuel Calculator - Javascript
 ---
 Simples calculadora em Javascript para descobrir o custo em R$ por KM do seu veículo.
 
-Para utilizar, basta preencher o primeiro campo (distância) e pressionar TAB. O próximo campo ficará ativo para ser digitado. Ao final, quando o campo Preço for finalizado, o cálculo será feito automaticamente.
+Para utilizar, basta preencher os campos que são solicitados. Após isso, clicar em **gerar resultados** para que o cálculo seja exibido.
 
 [Para testar, clique aqui](https://reinaldonunes.github.io/fuel-calc-js/)
 
