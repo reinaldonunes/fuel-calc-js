@@ -28,14 +28,14 @@ function fuelCalculate(distance, media, price){
 
         const rskm = document.createElement("span");
         rskm.classList.add("rskm");
-        rskm.textContent = "R$ "+pricePerKm.toFixed(3);
+        rskm.textContent = "R$ "+pricePerKm.toFixed(2);
 
         const h5 = document.createElement("h5");
         h5.textContent = "TOTAL DESLOCAMENTO";
 
         const rsdesloc = document.createElement("span");
         rsdesloc.classList.add("rsdesloc");
-        rsdesloc.textContent = "R$ "+totalPrice.toFixed(3);
+        rsdesloc.textContent = "R$ "+totalPrice.toFixed(2);
 
         const rslit = document.createElement("span");
         rslit.classList.add("rslit");
